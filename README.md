@@ -26,5 +26,5 @@ This command creates the following three special users, along with others, you c
 In addition to the Swagger documentation at route `/swagger-ui/index.html`, a Postman collection and environment
 can be found within the `postman` directory at the project root.
 
-To get a JWT, either import the Postman collection and execute the `/login` route. The automatic script will set the JWT
+To get a JWT, import the Postman collection and execute the `/login` route. The automatic script will set the JWT
 for you on the environment so you will be able to access the resources you are allowed without doing any other configuration.
