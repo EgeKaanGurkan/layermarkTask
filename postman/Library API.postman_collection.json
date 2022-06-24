@@ -1,0 +1,2520 @@
+{
+	"info": {
+		"_postman_id": "fe1386d2-6dcd-4bc5-9ba7-18b460395abe",
+		"name": "Library API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16022487"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "/api/v1/customers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer ajksdkaskd",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{api_url}}/api/v1/customers",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"customers"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer ajksdkaskd",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{api_url}}/api/v1/customers",
+											"host": [
+												"{{api_url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"customers"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Jun 2022 08:36:13 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"email\": \"curtis.ruecker@gmail.com\",\n        \"firstName\": \"Forrest\",\n        \"lastName\": \"Gleichner\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$y9jITEjwvQ5aL8I3ZPhLxuThyfYUXXLdVptB2tRIYyxpGLV5uKo0q\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"ROLE_ADMIN\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 2,\n        \"email\": \"maximo.west@gmail.com\",\n        \"firstName\": \"Tiffany\",\n        \"lastName\": \"Lakin\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$ca0qLz0YohUzGV/hZmgfqupdr7aiONA5IpoQSjYamjZQNZT65IYyu\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"ROLE_ADMIN\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 3,\n        \"email\": \"pennie.huels@yahoo.com\",\n        \"firstName\": \"Marcela\",\n        \"lastName\": \"Trantow\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$dQI642Lnph9LNvXhT.B4nO9wI6R.uRYgW2qSwfdsNOyf7.y/cBBfe\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"ROLE_ADMIN\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 4,\n        \"email\": \"elaine.grant@gmail.com\",\n        \"firstName\": \"Luther\",\n        \"lastName\": \"Macejkovic\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$OZ4/BB05LyG1oUkgoSLpDOTkOMC8i52Ko634r.9WO8JQ9NhZltUpG\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 5,\n        \"email\": \"freddy.ferry@gmail.com\",\n        \"firstName\": \"Anthony\",\n        \"lastName\": \"Schultz\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$GzGfh06VzWttH/jLoWuI6.ROHsXK7fkg7ew8n7PhU4XzNSC5q0VAu\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 6,\n        \"email\": \"angelo.wisoky@gmail.com\",\n        \"firstName\": \"Vella\",\n        \"lastName\": \"Conn\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$msA.Vx//yihj3J5mQQbZk.aIyKKWhcyYQKUfNoiaoOATcT4DZr9Xy\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 7,\n        \"email\": \"dallas.ankunding@yahoo.com\",\n        \"firstName\": \"Geraldo\",\n        \"lastName\": \"Hoeger\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$1AcmQpUb00Vd1.EtIyP3Mug3XNQQ8s4kJtq0r2FAk4z1vSp8QbO0u\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 8,\n        \"email\": \"trent.okeefe@gmail.com\",\n        \"firstName\": \"Sharyn\",\n        \"lastName\": \"Hodkiewicz\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$Q90zyLwV8g8GCltkHt1Y3u0Zd..jsF5dlGpl3CWsNuZNLqst1cA7u\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 9,\n        \"email\": \"cynthia.mosciski@gmail.com\",\n        \"firstName\": \"Jodie\",\n        \"lastName\": \"Schinner\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$6kFybzPJUcPsfkT7UGgelO5xi4KQOW1GqV/GNiDiQbU1Xy126KrN2\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 10,\n        \"email\": \"beatriz.schmidt@gmail.com\",\n        \"firstName\": \"Mose\",\n        \"lastName\": \"Haag\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$QfFBSIx2bOMgKR2wot2QieQQz9SHLwieP8p.lMp472bq8BIt5J8wy\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": []\n    },\n    {\n        \"id\": 11,\n        \"email\": \"ege@ege.com\",\n        \"firstName\": \"Ege\",\n        \"lastName\": \"Gurkan\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$mdmHBfo1ieMbbzDmFs7pL.AJpxFf.WhNuixArmPKqxOjRlvoFWfk6\",\n        \"roles\": [\n            {\n                \"id\": 1,\n                \"name\": \"ROLE_CUSTOMER\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"ROLE_ADMIN\"\n            }\n        ],\n        \"age\": 0,\n        \"borrowedBooks\": [],\n        \"reviews\": [\n            {\n                \"id\": 8,\n                \"content\": \"Dolore ut a unde omnis at commodi facere quasi harum aliquid quae.\",\n                \"rating\": 3\n            },\n            {\n                \"id\": 5,\n                \"content\": \"Necessitatibus itaque enim maxime itaque quo sint sunt est facilis rem odit dolores maxime.\",\n                \"rating\": 7\n            },\n            {\n                \"id\": 7,\n                \"content\": \"Ex mollitia necessitatibus et assumenda error et explicabo dolorum ducimus consequatur repellat nostrum velit.\",\n                \"rating\": 1\n            },\n            {\n                \"id\": 2,\n                \"content\": \"Enim reiciendis itaque quia ullam quia sint quia numquam enim quia totam.\",\n                \"rating\": 7\n            },\n            {\n                \"id\": 1,\n                \"content\": \"Dolorum eos illo quis sapiente ea et voluptatem accusantium ab ullam consequuntur et quaerat.\",\n                \"rating\": 5\n            },\n            {\n                \"id\": 4,\n                \"content\": \"Qui minima quidem sit saepe earum suscipit vel sit qui cum.\",\n                \"rating\": 8\n            },\n            {\n                \"id\": 6,\n                \"content\": \"Repudiandae expedita perferendis doloremque veniam ullam ea aut autem saepe omnis.\",\n                \"rating\": 9\n            },\n            {\n                \"id\": 9,\n                \"content\": \"Voluptatibus sed sit aliquam quia similique id aliquid ullam velit necessitatibus velit quia.\",\n                \"rating\": 8\n            },\n            {\n                \"id\": 3,\n                \"content\": \"Nesciunt veniam fugit aut eveniet quia qui distinctio ut non quia qui.\",\n                \"rating\": 10\n            },\n            {\n                \"id\": 10,\n                \"content\": \"Voluptates voluptatem ipsam expedita nesciunt est asperiores recusandae eum nam odio voluptas.\",\n                \"rating\": 8\n            }\n        ]\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/v1/customers/register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"firstName\": \"Ege\",\n  \"lastName\": \"Gurkan\",\n  \"email\": \"ege@ege.com\",\n  \"dateOfBirth\": \"2000-08-26\",\n  \"password\": \"egelmao\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/api/v1/customers/register",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "400",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"firstName\": \"Ege\",\n  \"lastName\": \"Gurkan\",\n  \"email\": \"ege@ege.com\",\n  \"dateOfBirth\": \"2000-08-26\",\n  \"password\": \"egelmao\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{api_url}}/api/v1/customers/register",
+											"host": [
+												"{{api_url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"customers",
+												"register"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Jun 2022 08:36:30 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Email already registered\",\n    \"httpStatus\": \"BAD_REQUEST\",\n    \"timestamp\": \"2022-06-24T08:36:30.726516Z\"\n}"
+								},
+								{
+									"name": "201",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"firstName\": \"Ege\",\n  \"lastName\": \"Gurkan\",\n  \"email\": \"egetest@ege.com\",\n  \"dateOfBirth\": \"2000-08-26\",\n  \"password\": \"egelmao\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{api_url}}/api/v1/customers/register",
+											"host": [
+												"{{api_url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"customers",
+												"register"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Jun 2022 08:36:47 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 23,\n    \"email\": \"ege@ege.com\",\n    \"firstName\": \"Ege\",\n    \"lastName\": \"Gurkan\",\n    \"dateOfBirth\": \"2000-08-26\",\n    \"password\": \"$2a$10$WOKsk5RNid2aINIafzbJ2O2O9hVv/eqDUcW.qTJIyGHjSs3Q9UYuS\",\n    \"roles\": [\n        {\n            \"id\": 1,\n            \"name\": \"ROLE_CUSTOMER\"\n        }\n    ],\n    \"age\": 0,\n    \"borrowedBooks\": [],\n    \"reviews\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/v1/customers/add-role",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"ege@ege.com\",\n    \"roleName\": \"ROLE_ADMIN\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/api/v1/customers/add-role",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"add-role"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"ege@ege.com\",\n    \"roleName\": \"ROLE_ADMIN\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{api_url}}/api/v1/customers/add-role",
+											"host": [
+												"{{api_url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"customers",
+												"add-role"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Jun 2022 08:32:24 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Librarian",
+					"item": [
+						{
+							"name": "/api/v1/librarians",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/librarians",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"librarians"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{api_url}}/api/v1/librarians",
+											"host": [
+												"{{api_url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"librarians"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Jun 2022 11:43:45 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 12,\n        \"email\": \"willodean.little@gmail.com\",\n        \"firstName\": \"Rocky\",\n        \"lastName\": \"Simonis\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$194/q2pdnxdnhbPXPJpSlefw4TO.T1xhArYG7USjStSe3WabGEuZW\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 13,\n        \"email\": \"reed.grady@gmail.com\",\n        \"firstName\": \"Antwan\",\n        \"lastName\": \"Mayert\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$ykkPL2KWenDenf9uHfQl2OHpWseWPcdpVO9fyXoc0.jTtKEH0VJPq\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 14,\n        \"email\": \"marna.fahey@gmail.com\",\n        \"firstName\": \"Veronica\",\n        \"lastName\": \"Trantow\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$7BnSQOmzZ3XbapAXo65hQOEls7/MB0fHgld93z3z0.Tpv9MWfd3U.\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 15,\n        \"email\": \"lexie.beatty@gmail.com\",\n        \"firstName\": \"Shavon\",\n        \"lastName\": \"Nicolas\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$K7cdWXBzL0HhbMXngknBzeeKsFXMCYisR636GGWrZSr5HzgXI0bGm\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 16,\n        \"email\": \"merrie.bayer@hotmail.com\",\n        \"firstName\": \"Chadwick\",\n        \"lastName\": \"Sporer\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$fcP9Ngn9a0/Sx9dl7VuEruEPiEy51yAmz2U1Oaq2bjELy5drhMNeC\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 17,\n        \"email\": \"vicki.gleason@hotmail.com\",\n        \"firstName\": \"Neoma\",\n        \"lastName\": \"Johnson\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$YcG/eLYOKsfaAp3j/c8N8uEKYKkM7UeQ7dgFb1Hg9JkbZZTvvNfvO\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 18,\n        \"email\": \"rosario.collier@gmail.com\",\n        \"firstName\": \"Reiko\",\n        \"lastName\": \"O'Hara\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$IajqWLuiCYnKEA6K6NDbe.PdI6IUFLMHBxuyvWYAY351MXkivQrYm\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 19,\n        \"email\": \"gayle.ratke@hotmail.com\",\n        \"firstName\": \"Janett\",\n        \"lastName\": \"Considine\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$SyMixJnpUvdEMGR13h7rK.iOkvRfLsmbOF0.aC4kr5qbmLfPMXaqa\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 20,\n        \"email\": \"darcy.aufderhar@gmail.com\",\n        \"firstName\": \"Leonard\",\n        \"lastName\": \"Hammes\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$Bvm/.DKC9gGykovEDrX82u8Ax/fgQ6WD4a4xaKws9KoqH2JDPBYFm\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 21,\n        \"email\": \"luna.cummings@hotmail.com\",\n        \"firstName\": \"Cyrus\",\n        \"lastName\": \"Homenick\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$fZj/uymhvXlLKY/DASPU4eKzyXefjba5/jLChITzSqVdFgV8pJm2m\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    },\n    {\n        \"id\": 22,\n        \"email\": \"demo@librarian.com\",\n        \"firstName\": \"Dalila\",\n        \"lastName\": \"Roob\",\n        \"dateOfBirth\": \"2000-01-05\",\n        \"password\": \"$2a$10$.6zRDeXQWLloidtErStPs.blv6oYiFs89t8pTDNP9qZqljizHZfvi\",\n        \"roles\": [\n            {\n                \"id\": 2,\n                \"name\": \"ROLE_LIBRARIAN\"\n            }\n        ],\n        \"age\": 0,\n        \"library\": null\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/v1/librarians/register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"firstName\": \"Ege\",\n  \"lastName\": \"Gurkan\",\n  \"email\": \"ege34@ege.com\",\n  \"dateOfBirth\": \"2000-08-26\",\n  \"password\": \"egelmao\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/api/v1/librarians/register",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"librarians",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "201",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"firstName\": \"Ege\",\n  \"lastName\": \"Gurkan\",\n  \"email\": \"ege34@ege.com\",\n  \"dateOfBirth\": \"2000-08-26\",\n  \"password\": \"egelmao\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{api_url}}/api/v1/librarians/register",
+											"host": [
+												"{{api_url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"librarians",
+												"register"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Jun 2022 07:52:24 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 23,\n    \"email\": \"ege34@ege.com\",\n    \"firstName\": \"Ege\",\n    \"lastName\": \"Gurkan\",\n    \"dateOfBirth\": \"2000-08-26\",\n    \"password\": \"$2a$10$q/oOlo2iKfLCHmwkyowHDuPNbh4Bh5NE6kphPQY/.oedBZZPqvxNi\",\n    \"roles\": [\n        {\n            \"id\": 2,\n            \"name\": \"ROLE_LIBRARIAN\"\n        }\n    ],\n    \"age\": 0,\n    \"library\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/v1/librarians/add-role",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"demo@librarian.com\",\n    \"roleName\": \"ROLE_ADMIN\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/api/v1/librarians/add-role",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"librarians",
+										"add-role"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"demo@librarian.com\",\n    \"roleName\": \"ROLE_ADMIN\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{api_url}}/api/v1/librarians/add-role",
+											"host": [
+												"{{api_url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"librarians",
+												"add-role"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Jun 2022 11:46:36 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "/api/v1/librarians/assign-to-library",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"librarianId\": 13,\n    \"libraryId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/api/v1/librarians/assign-to-library",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"librarians",
+										"assign-to-library"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "201",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"librarianId\": 13,\n    \"libraryId\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{api_url}}/api/v1/librarians/assign-to-library",
+											"host": [
+												"{{api_url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"librarians",
+												"assign-to-library"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Jun 2022 11:45:37 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 13,\n    \"email\": \"marybeth.johns@yahoo.com\",\n    \"firstName\": \"Granville\",\n    \"lastName\": \"McDermott\",\n    \"dateOfBirth\": \"2000-01-05\",\n    \"password\": \"$2a$10$YSx4CW/SkMzUFkcCeZZMWO80pSAw1wgCeS5KTVadTu3ZwxvCE5sHu\",\n    \"roles\": [\n        {\n            \"id\": 2,\n            \"name\": \"ROLE_LIBRARIAN\"\n        }\n    ],\n    \"age\": 0,\n    \"library\": {\n        \"id\": 1,\n        \"city\": \"Lake Truman\",\n        \"country\": \"El Salvador\",\n        \"name\": \"Smith College Library\",\n        \"books\": [],\n        \"librarian\": null\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "/api/v1/books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/v1/books",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/books",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:36:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"The Parliament of Man\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 265,\n        \"publishedAt\": \"2022-06-15T13:18:25\",\n        \"genre\": \"Mythopoeia\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 2,\n        \"name\": \"The Green Bay Tree\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 773,\n        \"publishedAt\": \"2022-06-17T04:49:40\",\n        \"genre\": \"Comic/Graphic Novel\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Carrion Comfort\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 899,\n        \"publishedAt\": \"2022-06-17T23:46:52\",\n        \"genre\": \"Western\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Dance Dance Dance\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 614,\n        \"publishedAt\": \"2022-06-16T12:38:32\",\n        \"genre\": \"Horror\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Jacob Have I Loved\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 832,\n        \"publishedAt\": \"2022-06-20T00:44:08\",\n        \"genre\": \"Textbook\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Consider Phlebas\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 197,\n        \"publishedAt\": \"2022-06-15T20:08:12\",\n        \"genre\": \"Classic\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 7,\n        \"name\": \"The Wind's Twelve Quarters\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 552,\n        \"publishedAt\": \"2022-06-15T12:54:05\",\n        \"genre\": \"Short story\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 8,\n        \"name\": \"A Time of Gifts\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 229,\n        \"publishedAt\": \"2022-06-17T12:11:46\",\n        \"genre\": \"Short story\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 9,\n        \"name\": \"East of Eden\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 739,\n        \"publishedAt\": \"2022-06-18T01:31:40\",\n        \"genre\": \"Horror\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 10,\n        \"name\": \"As I Lay Dying\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 899,\n        \"publishedAt\": \"2022-06-18T01:24:00\",\n        \"genre\": \"Essay\",\n        \"onLoan\": false,\n        \"reviews\": []\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Book With Reviews\",\n        \"isbn\": \"9783161484100\",\n        \"pageNumber\": 148,\n        \"publishedAt\": \"2022-06-19T23:52:47\",\n        \"genre\": \"Short story\",\n        \"onLoan\": false,\n        \"reviews\": [\n            {\n                \"id\": 2,\n                \"content\": \"Enim reiciendis itaque quia ullam quia sint quia numquam enim quia totam.\",\n                \"rating\": 7\n            },\n            {\n                \"id\": 9,\n                \"content\": \"Voluptatibus sed sit aliquam quia similique id aliquid ullam velit necessitatibus velit quia.\",\n                \"rating\": 8\n            },\n            {\n                \"id\": 4,\n                \"content\": \"Qui minima quidem sit saepe earum suscipit vel sit qui cum.\",\n                \"rating\": 8\n            },\n            {\n                \"id\": 1,\n                \"content\": \"Dolorum eos illo quis sapiente ea et voluptatem accusantium ab ullam consequuntur et quaerat.\",\n                \"rating\": 5\n            },\n            {\n                \"id\": 7,\n                \"content\": \"Ex mollitia necessitatibus et assumenda error et explicabo dolorum ducimus consequatur repellat nostrum velit.\",\n                \"rating\": 1\n            },\n            {\n                \"id\": 8,\n                \"content\": \"Dolore ut a unde omnis at commodi facere quasi harum aliquid quae.\",\n                \"rating\": 3\n            },\n            {\n                \"id\": 6,\n                \"content\": \"Repudiandae expedita perferendis doloremque veniam ullam ea aut autem saepe omnis.\",\n                \"rating\": 9\n            },\n            {\n                \"id\": 3,\n                \"content\": \"Nesciunt veniam fugit aut eveniet quia qui distinctio ut non quia qui.\",\n                \"rating\": 10\n            },\n            {\n                \"id\": 10,\n                \"content\": \"Voluptates voluptatem ipsam expedita nesciunt est asperiores recusandae eum nam odio voluptas.\",\n                \"rating\": 8\n            },\n            {\n                \"id\": 5,\n                \"content\": \"Necessitatibus itaque enim maxime itaque quo sint sunt est facilis rem odit dolores maxime.\",\n                \"rating\": 7\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/books",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"genre\": \"Horror\",\n  \"isbn\": \"12314124124\",\n  \"name\": \"Ege's Great Book\",\n  \"pageNumber\": 400,\n  \"publishedAt\": \"2022-06-24T12:10:44.775Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/v1/books",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"genre\": \"Horror\",\n  \"isbn\": \"12314124124\",\n  \"name\": \"Ege's Great Book\",\n  \"pageNumber\": 400,\n  \"publishedAt\": \"2022-06-24T12:10:44.775Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/api/v1/books",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 12:13:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Ege's Great Book\",\n    \"isbn\": \"12314124124\",\n    \"pageNumber\": 400,\n    \"publishedAt\": \"2022-06-24T12:10:44.775\",\n    \"genre\": \"Horror\",\n    \"onLoan\": false,\n    \"reviews\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/books/loan",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/v1/books/loan?bookId=6&userId=1",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"loan"
+							],
+							"query": [
+								{
+									"key": "bookId",
+									"value": "6"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/books/loan?bookId=2&userId=3",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"books",
+										"loan"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "2"
+										},
+										{
+											"key": "userId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:28:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Gone with the Wind\",\n    \"isbn\": \"9783161484100\",\n    \"pageNumber\": 222,\n    \"publishedAt\": \"2022-06-19T06:07:10\",\n    \"genre\": \"Short story\",\n    \"onLoan\": true,\n    \"reviews\": []\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/books/loan?bookId=2&userId=3",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"books",
+										"loan"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "2"
+										},
+										{
+											"key": "userId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:35:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The book with id 2 is already on loan.\",\n    \"httpStatus\": \"BAD_REQUEST\",\n    \"timestamp\": \"2022-06-24T08:35:02.244635Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/books/return",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/v1/books/return?bookId=6&userId=1",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"return"
+							],
+							"query": [
+								{
+									"key": "bookId",
+									"value": "6"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/books/return?bookId=2&userId=3",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"books",
+										"return"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "2"
+										},
+										{
+											"key": "userId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:35:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"The Green Bay Tree\",\n    \"isbn\": \"9783161484100\",\n    \"pageNumber\": 773,\n    \"publishedAt\": \"2022-06-17T04:49:40\",\n    \"genre\": \"Comic/Graphic Novel\",\n    \"onLoan\": false,\n    \"reviews\": []\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/books/return?bookId=2&userId=1",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"books",
+										"return"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "2"
+										},
+										{
+											"key": "userId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:34:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The book with id 2 is not loaned by this user.\",\n    \"httpStatus\": \"BAD_REQUEST\",\n    \"timestamp\": \"2022-06-24T08:34:07.838358Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/books/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/v1/books/100",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"100"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/books/1",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"books",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:35:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"The Parliament of Man\",\n    \"isbn\": \"9783161484100\",\n    \"pageNumber\": 265,\n    \"publishedAt\": \"2022-06-15T13:18:25\",\n    \"genre\": \"Mythopoeia\",\n    \"onLoan\": false,\n    \"reviews\": []\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/books/100",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"books",
+										"100"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:35:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"No book with the given ID exists.\",\n    \"httpStatus\": \"NOT_FOUND\",\n    \"timestamp\": \"2022-06-24T08:35:52.297551Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Library",
+			"item": [
+				{
+					"name": "/api/v1/libraries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/v1/libraries",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"libraries"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/libraries",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"libraries"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:27:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"city\": \"Yundtberg\",\n        \"country\": \"Benin\",\n        \"name\": \"Eastern Mills College Library\",\n        \"books\": [],\n        \"librarian\": null\n    },\n    {\n        \"id\": 2,\n        \"city\": \"Port Apoloniaport\",\n        \"country\": \"Sri Lanka\",\n        \"name\": \"North Rhode Island Academy Library\",\n        \"books\": [],\n        \"librarian\": null\n    },\n    {\n        \"id\": 3,\n        \"city\": \"Port Jeseniatown\",\n        \"country\": \"Bulgaria\",\n        \"name\": \"East Bednar Library\",\n        \"books\": [],\n        \"librarian\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/libraries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"city\": \"Ankara\",\n    \"country\": \"Turkey\",\n    \"name\": \"The Great Library\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/v1/libraries",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"libraries"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"city\": \"Ankara\",\n    \"country\": \"Turkey\",\n    \"name\": \"The Great Library\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/api/v1/libraries",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"libraries"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:27:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"city\": \"Ankara\",\n    \"country\": \"Turkey\",\n    \"name\": \"The Great Library\",\n    \"books\": [],\n    \"librarian\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/libraries/assign-book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/v1/libraries/assign-book?bookId=4&libraryId=3",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"libraries",
+								"assign-book"
+							],
+							"query": [
+								{
+									"key": "bookId",
+									"value": "4"
+								},
+								{
+									"key": "libraryId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "403",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/libraries/assign-book?bookId=4&libraryId=3",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"libraries",
+										"assign-book"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "4"
+										},
+										{
+											"key": "libraryId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:27:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/libraries/assign-book?bookId=4&libraryId=3",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"libraries",
+										"assign-book"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "4"
+										},
+										{
+											"key": "libraryId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:27:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"name\": \"What's Become of Waring\",\n    \"isbn\": \"9783161484100\",\n    \"pageNumber\": 409,\n    \"publishedAt\": \"2022-06-14T13:02:31\",\n    \"genre\": \"Narrative nonfiction\",\n    \"onLoan\": false,\n    \"reviews\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "/login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var data = pm.response.json();",
+									"pm.environment.set(\"access_token\", data.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "ege@ege.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123qwe",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "demo@librarian.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "devora.turcotte@hotmail.com",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}/login",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "ege@ege.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "123qwe",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "demo@librarian.com",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "egeasd@ege.com",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api_url}}/login",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "244"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:25:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW1vQGxpYnJhcmlhbi5jb20iLCJyb2xlcyI6WyJST0xFX0xJQlJBUklBTiJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvbG9naW4iLCJleHAiOjE2NTYwNzM1MjN9.B1OtTRTvydRGQUO9B194tcO9ZE9H7HsNoy1xY1hpnzg\"\n}"
+						},
+						{
+							"name": "403",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "ege@ege.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "123qwe",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "demo@librarian.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "egeasd@ege.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api_url}}/login",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 08:26:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"httpStatus\": \"FORBIDDEN\",\n    \"message\": \"Bad credentials\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "/api/v1/reviews?customerEmail=<email>&bookId=<bookId>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/v1/reviews?customerEmail=ege@ege.com",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "customerEmail",
+									"value": "ege@ege.com"
+								},
+								{
+									"key": "bookId",
+									"value": "11",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/api/v1/reviews?customerEmail=ege@ege.com",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"reviews"
+									],
+									"query": [
+										{
+											"key": "customerEmail",
+											"value": "ege@ege.com"
+										},
+										{
+											"key": "bookId",
+											"value": "11",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 11:47:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"content\": \"A sequi veniam dolorem vel necessitatibus sit debitis amet officiis sed.\",\n        \"rating\": 3\n    },\n    {\n        \"id\": 2,\n        \"content\": \"Laudantium quidem alias omnis delectus aut fugit culpa vel quia voluptatem provident accusantium est impedit.\",\n        \"rating\": 7\n    },\n    {\n        \"id\": 3,\n        \"content\": \"Fugiat voluptatum dolores maiores officiis voluptates non tempora mollitia quo at.\",\n        \"rating\": 3\n    },\n    {\n        \"id\": 4,\n        \"content\": \"Fuga esse ipsum et architecto architecto et repellendus quisquam tempora ex quibusdam cumque ut.\",\n        \"rating\": 7\n    },\n    {\n        \"id\": 5,\n        \"content\": \"Quas quasi voluptates nesciunt eum sunt consequatur minus harum quos soluta aut asperiores.\",\n        \"rating\": 4\n    },\n    {\n        \"id\": 6,\n        \"content\": \"Amet modi soluta deserunt molestiae cupiditate et repudiandae quo aliquam quisquam architecto quia.\",\n        \"rating\": 7\n    },\n    {\n        \"id\": 7,\n        \"content\": \"Recusandae voluptatem fugiat in at itaque corrupti blanditiis error quia dolorem pariatur.\",\n        \"rating\": 7\n    },\n    {\n        \"id\": 8,\n        \"content\": \"Et et quia provident debitis voluptatibus odit possimus ullam ipsum consequuntur dolorum.\",\n        \"rating\": 9\n    },\n    {\n        \"id\": 9,\n        \"content\": \"Est vitae quia ex in vitae aut omnis et quia quidem quos eaque voluptas.\",\n        \"rating\": 9\n    },\n    {\n        \"id\": 10,\n        \"content\": \"Accusantium repudiandae porro quis et eum nesciunt illum magni est non vel dolores consectetur.\",\n        \"rating\": 8\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/reviews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userEmail\": \"ege@ege.com\",\n    \"bookId\": 2,\n    \"content\": \"Great book!\",\n    \"rating\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/v1/reviews",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userEmail\": \"ege@ege.com\",\n    \"bookId\": 2,\n    \"content\": \"Great book!\",\n    \"rating\": 10\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/api/v1/reviews",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"reviews"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 11:50:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 11,\n    \"content\": \"Great book!\",\n    \"rating\": 10\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "/api/v1/roles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ROLE_ADMIN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/api/v1/roles",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POPULATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/v1/populate",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"populate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
