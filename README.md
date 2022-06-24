@@ -14,13 +14,13 @@ input validation using data transfer objects and constraints.
 This command creates the following three special users, along with others, you can use to test out the authentication features;
   * Test Admin: 
     * **email**: `test@admin.com`
-    * **password**: `123Qwe`  
+    * **password**: `123qwe`  
   * Test Customer: 
     * **email**: `test@customer.com`
-    * **password**: `123Qwe`  
+    * **password**: `123qwe`  
   * Test Librarian: 
     * **email**: `test@librarian.com`
-    * **password**: `123Qwe`
+    * **password**: `123qwe`
     
     
 In addition to the Swagger documentation at route `/swagger-ui/index.html`, a Postman collection and environment
