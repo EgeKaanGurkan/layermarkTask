@@ -17,6 +17,7 @@ import java.time.Period;
 import java.util.*;
 
 @Entity
+@Table(name = "app_user")
 @Data
 @NoArgsConstructor
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
